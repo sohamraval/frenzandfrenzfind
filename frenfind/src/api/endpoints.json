@@ -1,0 +1,11 @@
+{
+  "getLeaderboard": "https://frenfind-6b3d86bd2f7d.herokuapp.com/api/get-leaderboard",
+  "getPlayer": "get-player",
+  "getPlayerGameplay": "get-player-gameplay",
+  "getNextLevel": "get-next-level",
+  "postAnswer": "post-answer",
+  "getQuestions": "get-questions",
+  "postPlayerGameplay": "post-player-gameplay",
+  "twitterLogin": "twitter-login",
+  "tweet": "tweet"
+}

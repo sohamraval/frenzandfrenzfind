@@ -1,1 +1,1 @@
-# frenzandfrenzfind
+FrenFind and Frenz project

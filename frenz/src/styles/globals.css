@@ -1,0 +1,107 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+  position: relative;
+  background: linear-gradient(180deg, #0F91BE 0%, #5ECCF2 100%);
+  color: white;
+}
+
+.main-page {
+  background: url("../images/mainbackground.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+}
+
+@media(max-width: 768px){
+  .main-page {
+    background: url("../images/mainbackgroundmobile.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left top;
+  }
+
+}
+
+.button {
+  border-radius: 12px;
+  border: 1px solid #F9E865;
+  background: #F9E865;
+  padding: 14px 40px;
+  color: #232323;
+  text-align: center;
+  font-family: 'Satoshi-Medium';
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.48px;
+  cursor: pointer;
+}
+
+@media(max-width: 768px) {
+  .button {
+    border-radius: 12px;
+    border: 1px solid #F9E865;
+    background: #F9E865;
+    padding: 14px 40px;
+    color: #232323;
+    text-align: center;
+    font-family: 'Satoshi-Medium';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.48px;
+    cursor: pointer;
+  }
+}
+
+.MuiAccordion-root {
+  border-radius: 6px !important;
+  border: 1px solid rgba(0, 0, 0, 0.10) !important;
+  box-shadow: 0px 4px 30px 0px rgba(255, 255, 255, 0.02) !important;
+  background: #269BC8 !important;
+}
+
+.MuiAccordionSummary-content {
+  margin: 21px 0 !important;
+  color: white;
+  font-family: 'Satoshi-Regular';
+}
+
+.MuiAccordionDetails-root {
+  color: #212121;
+  font-family: 'Satoshi-Regular';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  /* 22.4px */
+}
+
+.menu-container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 80%;
+  height: 100%;
+  background: linear-gradient(180deg, #0F91BE 0%, #73DBFF 100%);
+  z-index: 1000;
+  transform: translateX(100%);
+  transition: transform 0.3s ease-out;
+}
+
+.menu-container.open {
+  transform: translateX(0);
+  /* Slide in */
+}
+
+@media(max-height: 500px){
+  .adjust{
+    width: 10%;
+  }
+}

@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "Lato", sans-serif;
+}
+
+.leaderboard-container {
+  background-image: url("./assets/images/lcomp.png");
+}
